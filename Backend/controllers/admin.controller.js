@@ -11,8 +11,7 @@ const getUsers = asyncHandler(async (req, res) => {
   if (!users) {
     res.json({ error: "Error Finding Users" }).status(404);
     return;
-  } else { 
-    
+  } else {
     res.status(200).json({ users });
   }
 });
